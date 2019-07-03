@@ -3,7 +3,7 @@ var router = express.Router();
 // var path = require('path');
 
 router.get('/user', (req, res, next) => {
-    res.render('index', { title: Users});
+    res.send('respond with a resource');
   });
 
 module.exports = router;
