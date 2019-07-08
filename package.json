@@ -10,15 +10,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^3.0.6",
+    "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.4",
     "debug": "^4.1.1",
     "express": "^4.17.1",
+    "express-session": "^1.16.2",
     "http-errors": "^1.7.3",
     "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
     "pg": "^7.11.0",
     "pug": "^2.0.4",
     "sequelize": "^5.9.2",
-    "sequelize-cli": "^5.5.0"
+    "sequelize-cli": "^5.5.0",
+    "validator": "^11.1.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
