@@ -30,7 +30,7 @@ module.exports = function(passport) {
     passwordField: 'password',
     passReqToCallback: true
   },
-  function(email, password, done) {
+  function(req, email, password, done) {
     return models.User.findOne({
       where: {
         'email' : email
@@ -48,7 +48,7 @@ module.exports = function(passport) {
       }
       return done(null, user);
     }).catch(err => {
-      done(err, false);
+        done(err, false);
     })
   }))
 }
