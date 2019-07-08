@@ -6,5 +6,6 @@ html(lang='en')
     h1= message
     h2= error.status
     pre #{error.stack}
-  +footer()
-  script(src='/javascripts/leads.js')
+    include common/footer.pug
+    +footer()
+    script(src='/javascripts/leads.js')
